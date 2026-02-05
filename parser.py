@@ -1,5 +1,11 @@
+import json
+
+
 def main():
-    print("hi")
+    with open("FolketsHus.json") as f:
+        data = json.load(f)
+
+    print(data)
 
 
 if __name__ == "__main__":
